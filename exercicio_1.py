@@ -23,7 +23,7 @@ y = file['price']
 x = file.drop('price', axis=1)
 
 # separando os dados em treino e teste
-x_treino, x_teste, y_treino, y_teste = train_test_split(x, y, test_size=0.3)
+x_treino, x_teste, y_treino, y_teste = train_test_split(x, y, test_size=0.3, random_state=10)
 
 # criando o modelo
 modelo = LinearRegression()
